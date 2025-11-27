@@ -20,11 +20,13 @@ function App() {
         <Route path="/complete" element={<CompletedPage />} />
         <Route path="/newgoal" element={<NewGoal />} />
         <Route path="/ongoing" element={<OngoingPage />} />
-        <Route path="/progress" element={<ProgressPage />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/progress/:id" element={<ProgressPage />} />
+        <Route path="/error" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
+
+//https://goal-back-1-ucqy.onrender.com
