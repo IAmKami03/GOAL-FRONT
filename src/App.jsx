@@ -21,7 +21,10 @@ function App() {
         <Route path="/newgoal" element={<NewGoal />} />
         <Route path="/ongoing" element={<OngoingPage />} />
         <Route path="/progress/:id" element={<ProgressPage />} />
-        <Route path="/error" element={<Error />} />
+
+
+        
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
